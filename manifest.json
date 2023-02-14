@@ -1,0 +1,27 @@
+{
+  "name": "Sticky Note FA",
+  "description": "Personal sticky note",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "sticky-notes.png",
+    "24": "sticky-notes.png",
+    "32": "sticky-notes.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "sticky-notes.png",
+      "24": "sticky-notes.png",
+      "32": "sticky-notes.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_security_policy": {     
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; default-src 'self'"
+  }
+}
